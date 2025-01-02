@@ -3364,10 +3364,10 @@ preact-render-to-string@^6.5.12:
   resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-6.5.12.tgz#57578b652d50294ae8084650e144e83a2bdb2217"
   integrity sha512-FpU7/cRipZo4diSWQq7gZWVp+Px76CtVduJZNvQwVzynDsAIxKteMrjCCGPbM2oEasReoDffaeMCMlaur9ohIg==
 
-preact@^10.23.2:
-  version "10.23.2"
-  resolved "https://registry.npmjs.org/preact/-/preact-10.23.2.tgz#52deec92796ae0f0cc6b034d9c66e0fbc1b837dc"
-  integrity sha512-kKYfePf9rzKnxOAKDpsWhg/ysrHPqT+yQ7UW4JjdnqjFIeNUnNcEJvhuA8fDenxAGWzUqtd51DfVg7xp/8T9NA==
+preact@10.24.0:
+  version "10.24.0"
+  resolved "https://registry.npmjs.org/preact/-/preact-10.24.0.tgz#bd8139bee35aafede3c6de96d2453982610dfeef"
+  integrity sha512-aK8Cf+jkfyuZ0ZZRG9FbYqwmEiGQ4y/PUO4SuTWoyWL244nZZh7bd5h2APd4rSNDYTBNghg1L+5iJN3Skxtbsw==
 
 prelude-ls@^1.2.1:
   version "1.2.1"

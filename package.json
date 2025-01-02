@@ -31,7 +31,7 @@
     "next-plugin-preact": "^3.0.7",
     "next-translate": "^2.6.2",
     "next-translate-plugin": "^2.6.2",
-    "preact": "^10.23.2",
+    "preact": "10.24.0",
     "preact-render-to-string": "^6.5.12",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
