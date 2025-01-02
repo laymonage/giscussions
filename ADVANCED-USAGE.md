@@ -182,6 +182,35 @@ https://bit.ly/RickRolled instead of your web page's URL. This can be useful if
 you want to use short links for your web pages (e.g. to avoid expired links if
 you change your website's URL structure or domain).
 
+### `giscus:description`
+
+If the page that embeds giscus has a `<meta>` tag with a
+`name="giscus:description"` attribute, the element will take the place of
+`<meta name="og:description" content="...">`. When creating a discussion, the
+discussion will includes that instead of the content of
+`<meta name="og:description">`. For example, with the following element in your
+web page:
+
+```html
+<head>
+  <!-- ... -->
+  <meta
+    name="og:description"
+    content="A comment system powered by GitHub Discussions."
+  >
+  <meta
+    name="giscus:description"
+    content="Please click the link above to see the post."
+  >
+  <!-- ... -->
+</head>
+```
+
+When giscus creates a new discussion, the discussion body will contain
+`Let visitors leave comments and reactions on your website via GitHub!` instead
+of `A comment system powered by GitHub Discussions.`. This can be useful if the
+page's `og:description` is volatile.
+
 ## giscus-to-parent `message` events
 
 There are `message` events emitted by giscus to the parent `window` using
