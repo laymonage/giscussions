@@ -69,6 +69,7 @@
   "theme=dark_dimmed": "GitHub Dark Dimmed",
   "theme=preferred_color_scheme": "ערכת נושא מועדפת",
   "theme=transparent_dark": "Transparent Dark",
+  "theme=transparent_balanced": "Transparent Balanced",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",
   "theme=noborder_dark": "NoBorder Dark",

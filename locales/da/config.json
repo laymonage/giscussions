@@ -72,6 +72,7 @@
   "theme=dark_dimmed": "GitHub Mørk Dimmed",
   "theme=preferred_color_scheme": "Preferred color scheme",
   "theme=transparent_dark": "Transparent Mørk",
+  "theme=transparent_balanced": "Transparent Balanced",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Lys",
   "theme=noborder_dark": "NoBorder Mørk",

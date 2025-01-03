@@ -72,6 +72,7 @@
   "theme=dark_dimmed": "GitHub Koyu Sönük",
   "theme=preferred_color_scheme": "Tercih edilen renk şeması",
   "theme=transparent_dark": "Saydam Koyu",
+  "theme=transparent_balanced": "Transparent Balanced",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",
   "theme=noborder_dark": "NoBorder Dark",

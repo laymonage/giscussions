@@ -72,6 +72,7 @@
   "theme=dark_dimmed": "GitHub Gelap Redup",
   "theme=preferred_color_scheme": "Skema warna pilihan",
   "theme=transparent_dark": "Gelap Transparan",
+  "theme=transparent_balanced": "Transparent Balanced",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",
   "theme=noborder_dark": "NoBorder Dark",

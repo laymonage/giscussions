@@ -1,0 +1,119 @@
+/*! Modified from GitHub's transparent theme in primer/primitives.
+ * MIT License
+ * Copyright (c) 2018 GitHub Inc.
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ */
+
+main {
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #3e97e7;
+  --color-prettylights-syntax-entity: #9067bc;
+  --color-prettylights-syntax-storage-modifier-import: #878a8d;
+  --color-prettylights-syntax-entity-tag: #1fd52f;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #689dc9;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: var(--color-accent-fg);
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: var(--color-accent-fg);
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #1fd52f;
+  --color-prettylights-syntax-markup-list: #e4b73d;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: var(--color-accent-fg);
+  --color-prettylights-syntax-markup-bold: var(--color-accent-fg);
+  --color-prettylights-syntax-markup-deleted-text: #ebd9d9;
+  --color-prettylights-syntax-markup-deleted-bg: #bf4c4c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #45825a;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: var(--color-accent-fg);
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #a464e8;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: var(--color-accent-fg);
+  --color-btn-text: #7b858d;
+  --color-btn-bg: rgb(45 51 59 / 80%);
+  --color-btn-border: rgb(240 246 252 / 10%);
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: rgb(45 51 59 / 70%);
+  --color-btn-hover-border: #8b949e;
+  --color-btn-active-bg: hsl(212deg 12% 18% / 50%);
+  --color-btn-active-border: #6e7681;
+  --color-btn-selected-bg: rgb(45 51 59 / 50%);
+  --color-btn-primary-text: #fff;
+  --color-btn-primary-bg: #238636;
+  --color-btn-primary-border: rgb(240 246 252 / 10%);
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: #2ea043;
+  --color-btn-primary-hover-border: rgb(240 246 252 / 10%);
+  --color-btn-primary-selected-bg: #238636;
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: rgb(240 246 252 / 80%);
+  --color-btn-primary-disabled-bg: rgb(35 134 54 / 60%);
+  --color-btn-primary-disabled-border: rgb(240 246 252 / 10%);
+  --color-action-list-item-default-hover-bg: rgb(144 157 171 / 50%);
+  --color-segmented-control-bg: rgb(99 110 123 / 10%);
+  --color-segmented-control-button-bg: transparent;
+  --color-segmented-control-button-selected-border: #636e7b;
+  --color-fg-default: #898686;
+  --color-fg-muted: #9fa9b4;
+  --color-fg-subtle: #5f6979;
+  --color-canvas-default: transparent;
+  --color-canvas-overlay: rgb(22 27 34 / 90%);
+  --color-canvas-inset: transparent;
+  --color-canvas-subtle: transparent;
+  --color-border-default: #80808080;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgb(110 118 129 / 5%);
+  --color-neutral-subtle: rgb(110 118 129 / 10%);
+  --color-accent-fg: #6aafff;
+  --color-accent-emphasis: #397fe7;
+  --color-accent-muted: rgb(56 139 253 / 40%);
+  --color-accent-subtle: rgb(65 132 228 / 10%);
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #c69026;
+  --color-attention-muted: rgb(174 124 20 / 40%);
+  --color-attention-subtle: transparent;
+  --color-danger-fg: #f85149;
+  --color-danger-muted: rgb(229 83 75 / 40%);
+  --color-danger-subtle: rgb(229 83 75 / 10%);
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-7: #21262d;
+  --color-scale-blue-8: #0c2d6b;
+
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+main {
+  accent-color: var(--color-accent-fg);
+}
+
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+}
+
+.gsc-pagination-button {
+  background-color: var(--color-btn-bg);
+}
+
+.gsc-homepage-bg {
+  background: linear-gradient(135deg, aliceblue 25%, #101010 25%, #101010 50%, aliceblue 50%, aliceblue 75%, #101010 75%, #101010 100%);
+  background-size: 350%;
+  background-repeat: repeat-y;
+}
+
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+}
+
+.gsc-comment-box-write > textarea, gsc-comment-box-write {
+	color: var(--color-fg-subtle);
+}
