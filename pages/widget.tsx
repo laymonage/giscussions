@@ -39,6 +39,7 @@ export async function getServerSideProps({ query, res }: GetServerSidePropsConte
 
   // Opt into CORP. See: https://web.dev/articles/coop-coep
   res.setHeader('Cross-Origin-Resource-Policy', 'cross-origin');
+  res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
 
   if (!assertOrigin(originHost, repoConfig)) {
     res.setHeader('Content-Security-Policy', `frame-ancestors 'none';`);
