@@ -34,6 +34,10 @@
   "useStrictTitleMatching": "Utiliser une correspondance de titre stricte",
   "avoidMismatches": "Évitez les correspondances incorrectes en raison de la méthode de recherche floue de GitHub lorsqu'il existe plusieurs discussions avec des titres similaires. Consultez la <a>documentation</a> pour plus de détails.",
 
+  "defineBasePath": "Définition du répertoire de base",
+  "basePathLabel": "Répertoire de base",
+  "/my/custom/basepath": "/mon/repertoire/de/base",
+
   "discussionCategory": "Catégorie de la Discussion",
   "chooseTheDiscussionCategory": "Choisir la catégorie de discussion associée aux nouvelles discussions créées par giscus.",
   "categoryIsNotSupported": "Cette fonctionnalité n'est pas disponible si vous avez opté pour le mappage selon un <strong>numéro de discussion spécifique</strong>.",

@@ -1,7 +1,6 @@
 (function () {
   const GISCUS_SESSION_KEY = 'giscus-session';
   const script = document.currentScript as HTMLScriptElement;
-  const giscusOrigin = new URL(script.src).origin;
 
   function formatError(message: string) {
     return `[giscus] An error occurred. Error message: "${message}".`;
@@ -52,6 +51,10 @@
   params.strict = attributes.strict || '0';
   params.description = getMetaContent('description', true);
   params.backLink = getMetaContent('giscus:backlink') || cleanedLocation;
+  params.basePath = attributes.basePath || '';
+
+  const giscusOrigin = attributes.giscusOrigin || new URL(script.src).origin;
+
 
   switch (attributes.mapping) {
     case 'url':
@@ -71,10 +74,10 @@
       break;
     case 'pathname':
     default:
-      params.term =
-        location.pathname.length < 2
+      const localPath = location.pathname.replace(params.basePath, '');
+      params.term = localPath.length < 2
           ? 'index'
-          : location.pathname.substring(1).replace(/\.\w+$/, '');
+          : localPath.substring(1).replace(/\.\w+$/, '');
       break;
   }
 

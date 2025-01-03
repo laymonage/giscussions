@@ -34,6 +34,10 @@
   "useStrictTitleMatching": "Use strict title matching",
   "avoidMismatches": "Avoid mismatches due to GitHub's fuzzy searching method when there are multiple discussions with similar titles. See <a>the documentation</a> for more details.",
 
+  "defineBasePath": "Define base path (pathname mapping only)",
+  "basePathLabel": "Basepath",
+  "/my/custom/basepath": "/my/custom/basepath",
+
   "discussionCategory": "Discussion Category",
   "chooseTheDiscussionCategory": "Choose the discussion category where new discussions will be created.",
   "categoryIsNotSupported": "This feature is not supported if you use the <strong>specific discussion number</strong> mapping.",
