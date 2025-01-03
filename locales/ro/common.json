@@ -95,13 +95,13 @@
   "ROCKET": "Rachetă",
   "EYES": "Ochi",
 
-  "COLLABORATOR": "Collaborator",
-  "CONTRIBUTOR": "Contributor",
-  "FIRST_TIMER": "First-timer",
-  "FIRST_TIME_CONTRIBUTOR": "First-time contributor",
-  "MANNEQUIN": "Mannequin",
-  "MEMBER": "Member",
-  "NONE": "None",
-  "OWNER": "Owner",
+  "COLLABORATOR": "Colaborator",
+  "CONTRIBUTOR": "Contribuitor",
+  "FIRST_TIMER": "Debutant",
+  "FIRST_TIME_CONTRIBUTOR": "Colaborator debutant",
+  "MANNEQUIN": "Machin",
+  "MEMBER": "Membru",
+  "NONE": "Nimic",
+  "OWNER": "Proprietar",
   "APP": "App"
 }
