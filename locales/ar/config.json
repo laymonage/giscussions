@@ -71,6 +71,7 @@
   "theme=dark_tritanopia": "أسود جيت هب عَمَى الأَزْرَق",
   "theme=dark_dimmed": "أسود جيت هب الغامق",
   "theme=preferred_color_scheme": "نظام اﻷلوان المفضل",
+  "theme=transparent_light": "ابيض الشفاف",
   "theme=transparent_dark": "اﻷسود الشفاف",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",

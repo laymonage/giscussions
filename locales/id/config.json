@@ -71,6 +71,7 @@
   "theme=dark_tritanopia": "GitHub Gelap Tritanopia",
   "theme=dark_dimmed": "GitHub Gelap Redup",
   "theme=preferred_color_scheme": "Skema warna pilihan",
+  "theme=transparent_light": "Terang Transparan",
   "theme=transparent_dark": "Gelap Transparan",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",

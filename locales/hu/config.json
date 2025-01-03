@@ -71,6 +71,7 @@
   "theme=dark_tritanopia": "GitHub Sötét Tritanopia",
   "theme=dark_dimmed": "GitHub Sötét Elhalványított",
   "theme=preferred_color_scheme": "Preferált színséma",
+  "theme=transparent_light": "Átlátszó Világos",
   "theme=transparent_dark": "Átlátszó Sötét",
   "theme=cobalt": "RStudio Kobalt",
   "theme=noborder_light": "NoBorder Világos",

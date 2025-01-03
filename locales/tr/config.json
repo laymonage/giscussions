@@ -71,6 +71,7 @@
   "theme=dark_tritanopia": "GitHub Koyu Tritanopia",
   "theme=dark_dimmed": "GitHub Koyu Sönük",
   "theme=preferred_color_scheme": "Tercih edilen renk şeması",
+  "theme=transparent_light": "Saydam Aydınlık",
   "theme=transparent_dark": "Saydam Koyu",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",

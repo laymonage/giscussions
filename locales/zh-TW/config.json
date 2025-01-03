@@ -78,6 +78,7 @@
   "theme=dark_tritanopia": "GitHub 深色主題 (Tritanopia)",
   "theme=dark_dimmed": "GitHub 深色主題 (暗淡)",
   "theme=preferred_color_scheme": "使用者偏好的色彩配置",
+  "theme=transparent_light": "深色主題 (半透明)",
   "theme=transparent_dark": "深色主題 (半透明)",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder 亮色主題",

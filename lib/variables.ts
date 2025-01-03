@@ -32,6 +32,7 @@ export const availableThemes = [
   'dark_tritanopia',
   'dark_dimmed',
   'preferred_color_scheme',
+  'transparent_light',
   'transparent_dark',
   'noborder_light',
   'noborder_dark',

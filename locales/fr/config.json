@@ -71,6 +71,7 @@
   "theme=dark_ptrianopia": "GitHub Dark Tritanopia",
   "theme=dark_dimmed": "GitHub Dark Dimmed",
   "theme=preferred_color_scheme": "Preferred color scheme",
+  "theme=transparent_light": "Transparent Light",
   "theme=transparent_dark": "Transparent Dark",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",

@@ -71,6 +71,7 @@
   "theme=dark_tritanopia": "گیت‌هاب تیره تریتانوپیا",
   "theme=dark_dimmed": "گیت‌هاب تیره محو",
   "theme=preferred_color_scheme": "تم رنگ دلخواه",
+  "theme=transparent_light": "شفاف روشن",
   "theme=transparent_dark": "شفاف تیره",
   "theme=cobalt": "RStudio Cobalt",
   "theme=noborder_light": "NoBorder Light",
