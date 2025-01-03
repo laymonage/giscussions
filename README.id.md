@@ -1,24 +1,24 @@
 # [giscus][giscus]
 
-Sebuah sistem komentar yang diberdayakan oleh [GitHub Discussions][discussions]. Memungkinkan pengunjung meninggalkan komentar dan reaksi pada website Anda melalui GitHub! Terinspirasi dari [utterances][utterances].
+Sebuah sistem komentar yang didukung oleh [GitHub Discussions][discussions]. Memungkinkan pengunjung meninggalkan komentar dan reaksi pada website Anda melalui GitHub! Terinspirasi dari [utterances][utterances].
 
-- [Bersumber terbuka][repo]. 🌏
+- [Sumber terbuka][repo]. 🌏
 - Tidak ada pelacakan, tidak ada iklan, selalu gratis. 📡 🚫
-- Tidak perlu basis data. Semua data disimpan di GitHub Discussions. :octocat:
-- Mendukung [tema buatan sendiri][creating-custom-themes]! 🌗
+- Tidak memerlukan database. Semua data disimpan di GitHub Discussions. :octocat:
+- Mendukung [tema kostumisasi][creating-custom-themes]! 🌗
 - Mendukung [banyak bahasa][multiple-languages]. 🌐
-- [Dapat dikonfigurasi secara luas][advanced-usage]. 🔧
+- [Konfigurasi luas][advanced-usage]. 🔧
 - Otomatis mengambil komentar dan perubahan baru dari GitHub. 🔃
-- [Dapat diinangkan sendiri][self-hosting]! 🤳
+- [Dapat dihosting sendiri][self-hosting]! 🤳
 
 > **Catatan:**\
 > giscus masih sedang dalam pengembangan aktif. GitHub juga masih aktif mengembangkan Discussions dan API-nya. Oleh karena itu, beberapa fitur giscus mungkin rusak atau berubah seiring waktu.
 
 ## Cara kerja
 
-Ketika giscus dimuat, [API pencarian GitHub Discussions][search-api] digunakan untuk mencari diskusi yang terkait dengan halaman penyemat berdasarkan pemetaan yang dipilih (URL, `pathname`, `<title>`, dll.). Jika diskusi yang terkait tidak ditemukan, bot giscus akan otomatis membuat diskusinya ketika ada orang yang meninggalkan komentar atau reaksi untuk pertama kalinya.
+Ketika giscus dimuat, [GitHub Discussions search API][search-api] digunakan untuk mencari diskusi yang terkait dengan halaman berdasarkan pemetaan yang dipilih (URL, `pathname`, `<title>`, dll.). Jika diskusi yang terkait tidak ditemukan, bot giscus akan otomatis membuat diskusinya ketika ada orang yang meninggalkan komentar atau reaksi untuk pertama kalinya.
 
-Untuk berkomentar, pengunjung harus mengizinkan [aplikasi giscus][giscus-app] untuk [berkomentar atas nama mereka][authorization] menggunakan alur GitHub OAuth. Atau, pengunjung dapat meninggalkan komentar pada diskusinya secara langsung di GitHub. Anda dapat memoderasi komentarnya di GitHub.
+Untuk berkomentar, pengunjung harus mengizinkan [aplikasi giscus][giscus-app] untuk [berkomentar atas nama mereka][authorization] menggunakan jalur GitHub OAuth. Atau, pengunjung dapat meninggalkan komentar pada diskusinya secara langsung di GitHub. Anda dapat memoderasi komentarnya di GitHub.
 
 [giscus]: https://giscus.app/id
 [discussions]: https://docs.github.com/en/discussions
@@ -34,17 +34,17 @@ Untuk berkomentar, pengunjung harus mengizinkan [aplikasi giscus][giscus-app] un
 
 <!-- configuration -->
 
-Jika Anda menggunakan giscus, pertimbangkan untuk [menambahkan bintang 🌟 giscus di GitHub][repo] dan menambahkan topic [`giscus`][giscus-topic] pada [repositori Anda][topic-howto]! 🎉
+Jika Anda menggunakan giscus, pertimbangkan untuk [membintangi 🌟 giscus di GitHub][repo] dan menambahkan topik [`giscus`][giscus-topic] pada [repositori Anda][topic-howto]! 🎉
 
 ## Penggunaan lanjutan
 
-Anda dapat menambahkan konfigurasi tambahan (contoh: hanya mengizinkan situs tertentu) dengan mengikuti [panduan penggunaan lanjutan][advanced-usage].
+Anda dapat menambahkan konfigurasi tambahan (contoh: hanya mengizinkan situs tertentu) dengan mengikuti [petunjuk penggunaan lanjutan][advanced-usage].
 
-Untuk menggunakan giscus dengan React, Vue, atau Svelte, cek [pustaka komponen giscus][giscus-component].
+Untuk menggunakan giscus pada React, Vue, atau Svelte, periksa [giscus component library][giscus-component].
 
 ## Migrasi
 
-Apabila Anda sebelumnya menggunakan sistem lain yang menggunakan GitHub Issues (misal: [utterances][utterances], [gitalk][gitalk]), Anda dapat [mengkonversi isu yang sudah ada menjadi diskusi][convert]. Setelah proses konversi, pastikan bahwa pemetaan antara judul diskusi dengan halaman-halamannya sudah benar, dan giscus akan otomatis menggunakan diskusinya.
+Jika Anda sebelumnya menggunakan sistem lain yang menggunakan GitHub Issues (seperti: [utterances][utterances], [gitalk][gitalk]), Anda dapat [mengkonversi isu yang sudah ada menjadi diskusi][convert]. Setelah proses konversi, pastikan bahwa pemetaan antara judul diskusi dengan halaman-halamannya sudah benar, dan giscus akan otomatis menggunakan diskusinya.
 
 ## Situs yang menggunakan giscus
 
