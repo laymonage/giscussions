@@ -69,6 +69,8 @@
     case 'number':
       params.number = attributes.term as string;
       break;
+    case 'custom-meta':
+      params.term = getMetaContent(attributes['mapping-custom-meta'])
     case 'pathname':
     default:
       params.term =
