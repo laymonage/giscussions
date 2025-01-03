@@ -16,6 +16,7 @@ interface CommentBoxProps {
   className?: string;
   onSubmit: (comment: IComment | IReply) => void;
   onDiscussionCreateRequest?: () => Promise<string>;
+  value?: string;
 }
 
 export default function CommentBox({
@@ -25,6 +26,7 @@ export default function CommentBox({
   className = '',
   onSubmit,
   onDiscussionCreateRequest,
+  value,
 }: CommentBoxProps) {
   const { t } = useGiscusTranslation();
   const [isPreview, setIsPreview] = useState(false);
@@ -54,7 +56,11 @@ export default function CommentBox({
       }
       setLastInput(input);
     }
-  }, [isPreview, input, lastInput, token, context]);
+    if (value && value !== input) {
+      const processed = processCommentBody(value);
+      setInput(processed);
+    }
+  }, [isPreview, input, lastInput, token, context, value]);
 
   const reset = useCallback(() => {
     setInput('');

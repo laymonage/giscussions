@@ -11,9 +11,10 @@ import ReactButtons from './ReactButtons';
 interface IGiscusProps {
   onDiscussionCreateRequest?: () => Promise<string>;
   onError?: (message: string) => void;
+  value?: string;
 }
 
-export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusProps) {
+export default function Giscus({ onDiscussionCreateRequest, onError, value }: IGiscusProps) {
   const { token, origin } = useContext(AuthContext);
   const { t } = useGiscusTranslation();
   const {
@@ -66,6 +67,7 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
       context={repo}
       onSubmit={addNewComment}
       onDiscussionCreateRequest={handleDiscussionCreateRequest}
+      value={value}
     />
   );
 

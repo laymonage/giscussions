@@ -10,9 +10,10 @@ import { getToken } from '../services/giscus/token';
 interface IWidgetProps {
   origin: string;
   session: string;
+  value: string;
 }
 
-export default function Widget({ origin, session }: IWidgetProps) {
+export default function Widget({ origin, session, value }: IWidgetProps) {
   const [token, setToken] = useState('');
   const [createDiscussionPromise, setCreateDiscussionPromise] = useState<Promise<string>>();
   const { repo, repoId, categoryId, description, backLink, term, number } =
@@ -75,7 +76,11 @@ export default function Widget({ origin, session }: IWidgetProps) {
 
   return ready ? (
     <AuthContext.Provider value={{ token, origin, getLoginUrl, onSignOut: handleSignOut }}>
-      <Giscus onDiscussionCreateRequest={handleDiscussionCreateRequest} onError={handleError} />
+      <Giscus
+        onDiscussionCreateRequest={handleDiscussionCreateRequest}
+        onError={handleError}
+        value={value}
+      />
     </AuthContext.Provider>
   ) : null;
 }

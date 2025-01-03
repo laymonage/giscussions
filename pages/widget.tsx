@@ -5,7 +5,7 @@ import Widget from '../components/Widget';
 import { assertOrigin } from '../lib/config';
 import { ConfigContext, ThemeContext } from '../lib/context';
 import { decodeState } from '../lib/oauth/state';
-import { InputPosition, ISetConfigMessage } from '../lib/types/giscus';
+import { InputPosition, ISetConfigMessage, ISetInputMessage } from '../lib/types/giscus';
 import { cleanSessionParam, getOriginHost } from '../lib/utils';
 import { env, Theme } from '../lib/variables';
 import { getAppAccessToken } from '../services/github/getAppAccessToken';
@@ -120,31 +120,41 @@ export default function WidgetPage({
     inputPosition,
     defaultCommentOrder,
   });
+  const [textInput, setTextInput] = useState<string>('');
 
   useEffect(() => {
+    const permittedMessages = ['setConfig', 'setInput'];
     const handleMessage = (event: MessageEvent) => {
       if (event.origin !== originHost) return;
       if (typeof event.data !== 'object' || !event.data.giscus) return;
 
       const giscusData = event.data.giscus;
-      if (!('setConfig' in giscusData)) return;
+      // if (!('setConfig' in giscusData)) return;
+      // check if giscusData is a permitted message
+      if (!permittedMessages.some((message) => message in giscusData)) return;
+      if (giscusData.setConfig) {
+        const { setConfig: newConfig } = giscusData as ISetConfigMessage;
 
-      const { setConfig: newConfig } = giscusData as ISetConfigMessage;
+        if ('theme' in newConfig) {
+          setTheme(newConfig.theme);
+          delete newConfig.theme;
+        }
 
-      if ('theme' in newConfig) {
-        setTheme(newConfig.theme);
-        delete newConfig.theme;
+        if (Router.isReady && newConfig.lang in availableLanguages) {
+          Router.replace(Router.asPath, Router.asPath, {
+            locale: newConfig.lang,
+            scroll: false,
+          });
+          delete newConfig.lang;
+        }
+
+        setConfig((prevConfig) => ({ ...prevConfig, ...newConfig }));
+      } else if (giscusData.setInput) {
+        const {
+          setInput: { input },
+        } = giscusData as ISetInputMessage;
+        setTextInput(input);
       }
-
-      if (Router.isReady && newConfig.lang in availableLanguages) {
-        Router.replace(Router.asPath, Router.asPath, {
-          locale: newConfig.lang,
-          scroll: false,
-        });
-        delete newConfig.lang;
-      }
-
-      setConfig((prevConfig) => ({ ...prevConfig, ...newConfig }));
     };
 
     window.addEventListener('message', handleMessage);
@@ -162,7 +172,7 @@ export default function WidgetPage({
 
       <main className="w-full mx-auto" data-theme={resolvedTheme}>
         <ConfigContext.Provider value={config}>
-          <Widget origin={resolvedOrigin} session={session} />
+          <Widget origin={resolvedOrigin} session={session} value={textInput} />
         </ConfigContext.Provider>
       </main>
     </>

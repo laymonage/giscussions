@@ -74,3 +74,9 @@ export interface ISetConfigMessage {
     lang?: AvailableLanguage;
   };
 }
+
+export interface ISetInputMessage {
+  setInput: {
+    input: string;
+  };
+}
