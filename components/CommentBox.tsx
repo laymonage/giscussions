@@ -166,7 +166,6 @@ export default function CommentBox({
                 setIsFixedWidth(!isFixedWidth);
                 textarea.current.focus();
               }}
-              tabIndex={-1}
             >
               <TypographyIcon />
             </button>
