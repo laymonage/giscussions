@@ -1,0 +1,123 @@
+// Theme based on Tokyonight Moon (https://github.com/folke/tokyonight.nvim)
+
+main {
+    --color-prettylights-syntax-comment: #636da6;
+    --color-prettylights-syntax-constant: #82aaff;
+    --color-prettylights-syntax-entity: #c099ff;
+    --color-prettylights-syntax-storage-modifier-import: #828bb8;
+    --color-prettylights-syntax-entity-tag: #4fd6be;
+    --color-prettylights-syntax-keyword: #ffc777;
+    --color-prettylights-syntax-string: #c3e88d;
+    --color-prettylights-syntax-variable: #ffc777;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #ff757f;
+    --color-prettylights-syntax-invalid-illegal-text: #c8d3f5;
+    --color-prettylights-syntax-invalid-illegal-bg: #c53b53;
+    --color-prettylights-syntax-carriage-return-text: #c8d3f5;
+    --color-prettylights-syntax-carriage-return-bg: #c53b53;
+    --color-prettylights-syntax-string-regexp: #4fd6be;
+    --color-prettylights-syntax-markup-list: #ffc777;
+    --color-prettylights-syntax-markup-heading: #82aaff;
+    --color-prettylights-syntax-markup-italic: #828bb8;
+    --color-prettylights-syntax-markup-bold: #828bb8;
+    --color-prettylights-syntax-markup-deleted-text: #ff757f;
+    --color-prettylights-syntax-markup-deleted-bg: #c53b53;
+    --color-prettylights-syntax-markup-inserted-text: #4fd6be;
+    --color-prettylights-syntax-markup-inserted-bg: #1e2030;
+    --color-prettylights-syntax-markup-changed-text: #ffc777;
+    --color-prettylights-syntax-markup-changed-bg: #1e2030;
+    --color-prettylights-syntax-markup-ignored-text: #c8d3f5;
+    --color-prettylights-syntax-markup-ignored-bg: #3e68d7;
+    --color-prettylights-syntax-meta-diff-range: #c099ff;
+    --color-prettylights-syntax-brackethighlighter-angle: #828bb8;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #545c7e;
+    --color-prettylights-syntax-constant-other-reference-link: #82aaff;
+    --color-btn-text: #c8d3f5;
+    --color-btn-bg: #1e2030;
+    --color-btn-border: #545c7e;
+    --color-btn-shadow: 0 0 transparent;
+    --color-btn-inset-shadow: 0 0 transparent;
+    --color-btn-hover-bg: #3b4261;
+    --color-btn-hover-border: #545c7e;
+    --color-btn-active-bg: #1e2030;
+    --color-btn-active-border: #545c7e;
+    --color-btn-selected-bg: #2f334d;
+    --color-btn-primary-text: #1e2030;
+    --color-btn-primary-bg: #a7c67d;
+    --color-btn-primary-border: #a7c67d;
+    --color-btn-primary-shadow: 0 0 transparent;
+    --color-btn-primary-inset-shadow: 0 0 transparent;
+    --color-btn-primary-hover-bg: #98b46e;
+    --color-btn-primary-hover-border: #98b46e;
+    --color-btn-primary-selected-bg: #98b46e;
+    --color-btn-primary-selected-shadow: 0 0 transparent;
+    --color-btn-primary-disabled-text: #c8d3f5;
+    --color-btn-primary-disabled-bg: #737aa2;
+    --color-btn-primary-disabled-border: #737aa2;
+    --color-action-list-item-default-hover-bg: #545c7e26;
+    --color-segmented-control-bg: #545c7e26;
+    --color-segmented-control-button-bg: #1e2030;
+    --color-segmented-control-button-selected-border: #545c7e;
+    --color-fg-default: #c8d3f5;
+    --color-fg-muted: #828bb8;
+    --color-fg-subtle: #737aa2;
+    --color-canvas-default: #222436;
+    --color-canvas-overlay: #1e2030;
+    --color-canvas-inset: #1e2030;
+    --color-canvas-subtle: #191B29;
+    --color-border-default: #2f334d;
+    --color-border-muted: #2f334d;
+    --color-neutral-muted: #545c7e42;
+    --color-accent-fg: #82aaff;
+    --color-accent-emphasis: #3e68d7;
+    --color-accent-muted: #82aaff;
+    --color-accent-subtle: #3e68d7;
+    --color-success-fg: #4fd6be;
+    --color-attention-fg: #ffc777;
+    --color-attention-muted: #ffc777;
+    --color-attention-subtle: #ffc77726;
+    --color-danger-fg: #ff757f;
+    --color-danger-muted: #ff757f;
+    --color-danger-subtle: #ff757f26;
+    --color-primer-shadow-inset: 0 0 transparent;
+    --color-scale-gray-7: #2f334d;
+    --color-scale-blue-8: #3e68d7;
+  
+    /*! Additional Customizations */
+    --color-social-reaction-bg-hover: #545c7e26;
+    --color-social-reaction-bg-reacted-hover: #3e68d7;
+  }
+
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+}
+
+/*! Custom CSS */
+
+.gsc-timeline {
+  flex-direction: column-reverse;
+}
+
+.gsc-header {
+  padding-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-header {
+  order: 1;
+}
+
+.gsc-comments > .gsc-comment-box {
+  order: 2;
+  margin-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-timeline {
+  order: 3;
+}
+
+.gsc-homepage-bg {
+  background-color: #15202b;
+}
+
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-dimmed.gif");
+}
