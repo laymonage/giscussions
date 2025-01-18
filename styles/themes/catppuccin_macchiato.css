@@ -1,15 +1,16 @@
 main {
-  --color-prettylights-syntax-comment: #8087a2;
+  --color-prettylights-syntax-comment: #939ab7;
   --color-prettylights-syntax-constant: #8aadf4;
+  --color-prettylights-syntax-constant-other-reference-link: #8aadf4;
   --color-prettylights-syntax-entity: #8aadf4;
   --color-prettylights-syntax-storage-modifier-import: #f5a97f;
-  --color-prettylights-syntax-entity-tag: #8bd5ca;
-  --color-prettylights-syntax-keyword: #f5bde6;
+  --color-prettylights-syntax-entity-tag: #8aadf4;
+  --color-prettylights-syntax-keyword: #c6a0f6;
   --color-prettylights-syntax-string: #a6da95;
   --color-prettylights-syntax-variable: #f5a97f;
   --color-prettylights-syntax-invalid-illegal-text: #ed8796;
   --color-prettylights-syntax-invalid-illegal-bg: rgb(237 135 150 / 15%);
-  --color-prettylights-syntax-markup-heading: #8bd5ca;
+  --color-prettylights-syntax-markup-heading: #ed8796;
   --color-prettylights-syntax-markup-italic: #eed49f;
   --color-prettylights-syntax-markup-bold: #eed49f;
   --color-prettylights-syntax-markup-deleted-text: #cad3f5;
@@ -55,7 +56,7 @@ main {
   --color-canvas-subtle: #1e2030;
   --color-border-default: #494d64;
   --color-border-muted: #363a4f;
-  --color-neutral-muted: rgb(110 115 141 / 30%);
+  --color-neutral-muted: rgb(110 115 141 / 20%);
   --color-accent-fg: #c6a0f6;
   --color-accent-emphasis: #c6a0f6;
   --color-accent-muted: rgb(198 160 246 / 40%);
