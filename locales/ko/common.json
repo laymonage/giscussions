@@ -1,18 +1,18 @@
 {
   "reactions": {
-    "0": "반응 {{count}}개",
+    "0": "반응 없음",
     "one": "반응 {{count}}개",
     "other": "반응 {{count}}개"
   },
   "comment": "댓글 등록",
   "comments": {
-    "0": "댓글 {{count}}개",
+    "0": "댓글 없음",
     "one": "댓글 {{count}}개",
     "other": "댓글 {{count}}개"
   },
   "reply": "답글 등록",
   "replies": {
-    "0": "답글 {{count}}개",
+    "0": "답글 없음",
     "one": "답글 {{count}}개",
     "other": "답글 {{count}}{{plus}}개"
   },
@@ -22,12 +22,12 @@
     "other": "추천 {{count}}개"
   },
   "hiddenItems": {
-    "0": "숨겨진 항목 {{count}}개",
+    "0": "숨겨진 항목 없음",
     "one": "숨겨진 항목 {{count}}개",
     "other": "숨겨진 항목 {{count}}개"
   },
-  "genericError": "오류 발생: {{message}}",
-  "loadMore": "더 불러오기",
+  "genericError": "오류 발생 ({{message}})",
+  "loadMore": "불러오기",
   "loading": "불러오는 중",
   "loadingComments": "댓글 불러오는 중…",
   "loadingPreview": "미리보기 불러오는 중…",
@@ -35,12 +35,12 @@
   "oldest": "오래된 순",
   "newest": "새로운 순",
   "showPreviousReplies": {
-    "0": "이전 답글 {{count}}개 더 보기",
+    "0": "이전 답글 없음",
     "one": "이전 답글 {{count}}개 더 보기",
     "other": "이전 답글 {{count}}개 더 보기"
   },
   "seePreviousRepliesOnGitHub": {
-    "0": "GitHub에서 이전 답글 {{count}}개 더 보기",
+    "0": "이전 답글 없음",
     "one": "GitHub에서 이전 답글 {{count}}개 더 보기",
     "other": "GitHub에서 이전 답글 {{count}}개 더 보기"
   },
@@ -52,9 +52,9 @@
   "preview": "미리보기",
   "enableFixedWidth": "편집기에서 고정폭 글꼴 사용",
   "disableFixedWidth": "편집기에서 고정폭 글꼴 사용 안 함",
-  "lastEditedAt": "{{date}}에 마지막으로 수정됨",
-  "writeAComment": "댓글 작성하기",
-  "signInToComment": "로그인하고 댓글 작성하기",
+  "lastEditedAt": "{{date}}에 마지막으로 수정",
+  "writeAComment": "댓글 작성",
+  "signInToComment": "로그인하고 댓글 작성",
   "stylingWithMarkdownIsSupported": "마크다운 형식 지원",
   "signOut": "로그아웃",
   "cancel": "취소",
@@ -68,21 +68,21 @@
   "pickYourReaction": "반응을 고르세요",
   "addTheReaction": "{{reaction}} 반응 추가",
   "removeTheReaction": "{{reaction}} 반응 제거",
-  "signInToAddYourReaction": "<a>로그인</a>하고 반응을 남기세요.",
-  "youMustBeSignedInToAddReactions": "반응을 남기려면 로그인해야 합니다.",
+  "signInToAddYourReaction": "<a>로그인</a>하고 반응을 남기기",
+  "youMustBeSignedInToAddReactions": "반응을 남기려면 로그인",
   "peopleReactedWith": {
-    "0": "{{count}}명이 {{reaction}} {{emoji}}로 반응함",
+    "0": "아무도 {{reaction}} {{emoji}}로 반응하지 않음",
     "one": "{{count}}명이 {{reaction}} {{emoji}}로 반응함",
     "other": "{{count}}명이 {{reaction}} {{emoji}}로 반응함"
   },
   "emoji": "이모지",
   "nothingToPreview": "미리볼 내용이 없습니다.",
 
-  "THUMBS_UP": "+1",
-  "THUMBS_DOWN": "-1",
+  "THUMBS_UP": "좋아요",
+  "THUMBS_DOWN": "싫어요",
   "LAUGH": "웃음",
-  "HOORAY": "만세",
-  "CONFUSED": "혼란",
+  "HOORAY": "축하",
+  "CONFUSED": "놀람",
   "HEART": "하트",
   "ROCKET": "로켓",
   "EYES": "눈",
